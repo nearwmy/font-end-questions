@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>red ten</title>
+</head>
+<style>
+	html,body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#app {
+		position: relative;
+		width: auto;
+		height: 100%;
+	}
+	.center {
+		background: red;
+		width: 120px;
+		height: 40px;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.center:before {
+		content: '';
+		display: block;
+		position: relative;
+		width: 40px;
+		height: 120px;
+		background: red;
+		margin-left: 40px;
+		margin-top: -40px;
+	}
+/* 	#app2 {
+		width: 120px;
+		height: 40px;
+		background: red;
+		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -20px;
+		margin-left: -60px;
+	}
+	#app2:before {
+		width: 120px;
+		height: 40px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
+	} */
+</style>
+<body>
+	<!-- type 1 -->
+	<div id="app">
+		<div class="center"></div>
+	</div>
+
+	<!-- type 2 -->
+	<!-- <div id="app2"></div> -->
+</body>
+</html>
